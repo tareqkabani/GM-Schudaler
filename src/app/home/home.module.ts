@@ -5,12 +5,14 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { NgxFullCalendarModule } from 'ngx-fullcalendar';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    NgxFullCalendarModule,
     RouterModule.forChild([
       {
         path: '',
