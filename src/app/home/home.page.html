@@ -1,17 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+    <ion-buttons slot="start" menuToggle="right">
+      <ion-menu-button  end></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Home
+    <ion-title text-center>
+      {{title}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
+  <ion-button (click)="loadevents()">loadevents</ion-button>
       <ngx-fullcalendar defaultView="month" [events]="events" [options]="options"></ngx-fullcalendar>  
 
-  </ion-card>
+  
 </ion-content>

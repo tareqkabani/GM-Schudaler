@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgxFullCalendarModule } from 'ngx-fullcalendar';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { NgxFullCalendarModule } from 'ngx-fullcalendar';
   imports: [
     BrowserModule,
     NgxFullCalendarModule,
+    HttpClientModule,
     IonicModule.forRoot(),
     AppRoutingModule
   ],
