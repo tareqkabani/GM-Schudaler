@@ -71,10 +71,8 @@ export class HomePage implements OnInit{
             console.log(err);
             
           });
-          this.events = [
-            { id: 'a', title: 'My Birthday', allDay: true },
-            { id: 'b', title: 'Friends coming round', start: '2018-07-26T18:00:00', end: '2018-07-26T23:00:00' }
-          ]
+          this.events = this.TheEvents
+          
     console.log( this.events)
     
   }
